@@ -1,7 +1,7 @@
-var q = ["Inside which HTML element do we put the JavaScript?<br /><br />", 
-        "JavaScript is a ___ -side programming language.<br /><br />", 
-        "Which of the following will write the message “Hello DataFlair!” in an alert box?<br /><br />", 
-        "How do you find the minimum of x and y using JavaScript?<br /><br />"];
+var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />", 
+        "Q2. JavaScript is a ___ -side programming language.<br /><br />", 
+        "Q3. Which of the following will write the message “Hello DataFlair!” in an alert box?<br /><br />", 
+        "Q4. How do you find the minimum of x and y using JavaScript?<br /><br />"];
         
         var a1 = ["<button class=buttons002 onclick=q1c()>script</button>",
                   "<button class=buttons002 onclick=q2c()>Both</button>",
