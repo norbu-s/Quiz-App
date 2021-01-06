@@ -1,33 +1,33 @@
-var q = ["Inside which HTML element do we put the JavaScript?<br /><br />", "What is the correct JavaScript syntax to change the content of the HTML element below?<br /><br />", "What does JS stand for?<br /><br />", "Where is the correct place to insert a JavaScript?<br /><br />", "What is the correct syntax for referring to an external script called 'xxx.js'?<br /><br />"];
-        var a1 = ["<button class=buttons002 onclick=q1c()>javascript</button>",
-                  "<button class=buttons002 onclick=q2c()>document.getElement('p').innerHTML ='Hello World!'</button>",
-                  "<button class=buttons002 onclick=q3c()>6</button>",
-                  "<button class=buttons002 onclick=q4i()>13</button>",
-                  "<button class=buttons002 onclick=q5i()>6</button>"];
+var q = ["Inside which HTML element do we put the JavaScript?<br /><br />", 
+        "JavaScript is a ___ -side programming language.<br /><br />", 
+        "Which of the following will write the message “Hello DataFlair!” in an alert box?<br /><br />", 
+        "How do you find the minimum of x and y using JavaScript?<br /><br />"];
+        
+        var a1 = ["<button class=buttons002 onclick=q1c()>script</button>",
+                  "<button class=buttons002 onclick=q2c()>Both</button>",
+                  "<button class=buttons002 onclick=q3c()>alert(“Hello DataFlair!”);</button>",
+                  "<button class=buttons002 onclick=q4i()>min(x,y);</button>"];
 
-        var a2 = ["<button class=buttons002 onclick=q1i()>script</button>",
-                  "<button class=buttons002 onclick=q2i()>7</button>",
-                  "<button class=buttons002 onclick=q3i()>2</button>",
-                  "<button class=buttons002 onclick=q4c()>8</button>",
-                  "<button class=buttons002 onclick=q5c()>10</button>"];
+        var a2 = ["<button class=buttons002 onclick=q1i()>javascript</button>",
+                  "<button class=buttons002 onclick=q2i()>Client</button>",
+                  "<button class=buttons002 onclick=q3i()>alertBox(“Hello DataFlair!”)</button>",
+                  "<button class=buttons002 onclick=q4c()>Math.min(x,y)</button>"];
 
         var a3 = ["<button class=buttons002 onclick=q1i()>js</button>",
-                  "<button class=buttons002 onclick=q2i()>6</button>",
-                  "<button class=buttons002 onclick=q3i()>9</button>",
-                  "<button class=buttons002 onclick=q4i()>9</button>",
-                  "<button class=buttons002 onclick=q5i()>7</button>"];
+                  "<button class=buttons002 onclick=q2i()>Server</button>",
+                  "<button class=buttons002 onclick=q3i()>alertBox(“Hello DataFlair!”)<;</button>",
+                  "<button class=buttons002 onclick=q4i()>Math.min(xy)</button>"];
 
         var a4 = ["<button class=buttons002 onclick=q1i()>scripting</button>",
-                  "<button class=buttons002 onclick=q2i()>2</button>",
-                  "<button class=buttons002 onclick=q3i()>14</button>",
-                  "<button class=buttons002 onclick=q4i()>1</button>",
-                  "<button class=buttons002 onclick=q5i()>2</button>"];
+                  "<button class=buttons002 onclick=q2i()>None</button>",
+                  "<button class=buttons002 onclick=q3i()>msgAlert(“Hello DataFlair!”);</button>",
+                  "<button class=buttons002 onclick=q4i()>min(xy);</button>"];
 
-        var c = ["Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct", "Correct"];
-        var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
+        var c = ["Correct", "Correct", "Correct", "Correct", "Correct"];
+        var i = ["Incorrect", "Incorrect", "Incorrect", "Incorrect", "Incorrect"];
 
         var n = 0;
-        n++;
+        n + 1000;
         var s = 0;
         s++;
 
@@ -138,7 +138,6 @@ var q = ["Inside which HTML element do we put the JavaScript?<br /><br />", "Wha
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
-            next001.innerHTML = "<button class=buttons001 onclick=new005()>Next</button>";
             score001.innerHTML = s++;
         }
 
@@ -148,39 +147,9 @@ var q = ["Inside which HTML element do we put the JavaScript?<br /><br />", "Wha
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
-            next001.innerHTML = "<button class=buttons001 onclick=new005()>Next</button>";
-        }
-
-        function new005() {
-            question001.innerHTML = q[4];
-            option001.innerHTML = a1[4];
-            option002.innerHTML = a2[4];
-            option003.innerHTML = a3[4];
-            option004.innerHTML = a4[4];
-            next001.innerHTML = "";
-            answer001.innerHTML = "";
-            number001.innerHTML = n++;
-        }
-
-        function q5c() {
-            answer001.innerHTML = "<div id=green001>" + c[4] + "</div>";
-            option001.innerHTML = "";
-            option002.innerHTML = "";
-            option003.innerHTML = "";
-            option004.innerHTML = "";
-            next001.innerHTML = "<button class=buttons001 onclick=new006()>Next</button>";
+            next001.innerHTML = "<button class=buttons001 onclick=end001()>End of Quiz</button>";
             score001.innerHTML = s++;
         }
-
-        function q5i() {
-            answer001.innerHTML = "<div id=red001>" + i[4] + "</div>";
-            option001.innerHTML = "";
-            option002.innerHTML = "";
-            option003.innerHTML = "";
-            option004.innerHTML = "";
-            next001.innerHTML = "<button class=buttons001 onclick=new006()>Next</button>";
-        }
-
 
         function end001() {
             message001.innerHTML = "End of Quiz.";

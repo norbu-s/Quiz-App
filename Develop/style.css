@@ -12,7 +12,7 @@
     margin-left: 3000px;
 }
 
-#number001{
+.Time{
     position: absolute;
     top: 0;
     right: 0;
@@ -30,7 +30,7 @@
 }
 
 .buttons002 {
-    background-color: lightblue;
+    background-color:purple;
     color: black;
     padding: 5px;
     margin: 10px;
