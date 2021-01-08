@@ -22,8 +22,8 @@ Norbu Sherpa
 6. https://www.youtube.com/watch?v=49pYIMygIcU
 7. https://www.ikhtabirni.com/how-to-make-a-multiple-choice-quiz-using-javascript-arrays.html
 
-Github Repository:https://github.com/norbu-s/Quiz-App
+Project Url::https://github.com/norbu-s/Quiz-App
 
-Project Url: https://norbu-s.github.io/Quiz-App/
+Github Repository: https://norbu-s.github.io/Quiz-App/
 
 Application Screenshot: ![image](https://user-images.githubusercontent.com/73917485/104025375-a40de980-5218-11eb-96e1-55259d6825b4.png)
