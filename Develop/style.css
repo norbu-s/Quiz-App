@@ -11,7 +11,6 @@
 h1{
     font-weight: 100;
     font-size: 40px;
-    margin: 40px 0px 20px;
   }
 
 .Time{
@@ -45,7 +44,7 @@ h1{
 }
 
 #text002 {
-    text-align: left;
+    text-align: center;
 }
 
 #green001 {
@@ -68,14 +67,12 @@ h1{
   #clockdiv > div{
     padding: 10px;
     border-radius: 3px;
-    background: #00BF96;
     display: inline-block;
   }
   
   #clockdiv div > span{
     padding: 15px;
     border-radius: 3px;
-    background: #00816A;
     display: inline-block;
   }
   

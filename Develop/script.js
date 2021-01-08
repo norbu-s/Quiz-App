@@ -33,6 +33,7 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
 
         function begin001() {
             disappear001.innerHTML = "";
+            disappear002.innerHTML = "";
             message001.innerHTML = "";
             question001.innerHTML = q[0];
             option001.innerHTML = a1[0];
@@ -165,30 +166,4 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
         function repeat001() {
             location.reload();
         }
-
-        function getTimeRemaining(endtime) {
-            const seconds = Math.floor((total / 1000) % 60);
-            return {
-              seconds
-            };
-          }
-          
-          function initializeClock(id, endtime) {
-            const clock = document.getElementById(id);
-            const secondsSpan = clock.querySelector('.seconds');
-          
-            function updateClock() {
-              const t = getTimeRemaining(endtime);
-          
-              daysSpan.innerHTML = t.days;
-              secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-          
-              if (t.total <= 0) {
-                clearInterval(timeinterval);
-              }
-            }
-          
-            updateClock();
-            const timeinterval = setInterval(updateClock, 1000);
-          }
         
