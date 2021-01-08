@@ -168,8 +168,14 @@ function end001() {
     option002.innerHTML = "";
     option003.innerHTML = "";
     option004.innerHTML = "";
-    next001.innerHTML = "<div id=text001>" + "<button class=buttons001 onclick=repeat001()>Repeat</button>" + "</div>";
+    next001.innerHTML = "<div id=text001>" + "<button class=buttons001 onclick=repeat001()>Restart</button>" + "</div>";
     answer001.innerHTML = "";
+    alert("Game Over");
+    var initial 
+    initial = prompt("Enter you initial to save your score");
+    var getName 
+    getName = document.getElementById("initials");
+    document.write(initial + " your total score is " + s);
 }
 
 function repeat001() {
