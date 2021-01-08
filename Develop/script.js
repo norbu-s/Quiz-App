@@ -41,8 +41,7 @@ function start() {
 var n = 0;
 n + 1000;
 var s = 0;
-s++; 
-var   
+s++;    
 
 function begin001() {
     start();      
