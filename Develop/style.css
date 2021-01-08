@@ -19,6 +19,13 @@
       left:0;  
   }
 
+  #Seconds{
+    position:fixed;
+    Top:0;
+    right: 0;
+  }
+
+
   .buttons001 {
       background-color: blue;
       color: white;
@@ -42,7 +49,8 @@
   }
 
   #text002 {
-      text-align: center;
+    margin-top: 100px;
+    text-align: center;
   }
 
   #green001 {
@@ -60,10 +68,3 @@
       font-family: sans-serif;
       color: #fff;
     }
-    
-    #smalltext{
-      position:fixed;
-      Top:0;
-      right: 0;
-  }
-  
