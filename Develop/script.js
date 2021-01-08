@@ -31,7 +31,20 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
         var s = 0;
         s++;
 
+        var clockdiv = 0;
+            var timerId;
+            function start() {
+            timerId = setInterval(function(){
+            clockdiv = clockdiv + 1;
+            console.log(clockdiv);
+            }, 1000);
+            }
+            function stop() {
+            clearInterval(timerId);
+            }
+
         function begin001() {
+            start();
             disappear001.innerHTML = "";
             disappear002.innerHTML = "";
             message001.innerHTML = "";
@@ -39,8 +52,7 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
             option001.innerHTML = a1[0];
             option002.innerHTML = a2[0];
             option003.innerHTML = a3[0];
-            option004.innerHTML = a4[0];
-            number001.innerHTML = n++;
+            option004.innerHTML = a4[0]; 
         }
 
         function q1c() {
@@ -59,6 +71,7 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
             option002.innerHTML = "";
             option003.innerHTML = "";
             option004.innerHTML = "";
+            clockdiv.innerHTML = ++10000;
             next001.innerHTML = "<button class=buttons001 onclick=new002()>Next</button>";
         }
 
@@ -70,7 +83,6 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
             option004.innerHTML = a4[1];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML = n++;
         }
 
         function q2c() {
@@ -100,7 +112,6 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
             option004.innerHTML = a4[2];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML = n++;
         }
 
         function q3c() {
@@ -130,7 +141,6 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
             option004.innerHTML = a4[3];
             next001.innerHTML = "";
             answer001.innerHTML = "";
-            number001.innerHTML = n++;
         }
 
         function q4c() {
@@ -153,6 +163,7 @@ var q = ["Q1. Inside which HTML element do we put the JavaScript?<br /><br />",
         }
 
         function end001() {
+            stop();
             message001.innerHTML = "End of Quiz.";
             question001.innerHTML = "";
             option001.innerHTML = "";
